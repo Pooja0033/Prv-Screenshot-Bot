@@ -3,9 +3,9 @@ from pathlib import Path
 
 class Config:
     
-    API_ID = int(os.environ.get('API_ID'))
-    API_HASH = os.environ.get('API_HASH')
-    BOT_TOKEN = os.environ.get('BOT_TOKEN')
+    API_ID = int(os.environ.get("APP_ID", "10303160"))
+    API_HASH = os.environ.get("API_HASH", "a479b881a19ec6ddb64ed90f834488e8")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5747703213:AAH29TN_h_Dnt8gCAlhZSVe8lQx1QMKHfq0")
     SESSION_NAME = os.environ.get('SESSION_NAME')
     LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL'))
     DATABASE_URL = os.environ.get('DATABASE_URL')
